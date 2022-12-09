@@ -1,0 +1,7 @@
+{
+  "name": "ks_pf",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
