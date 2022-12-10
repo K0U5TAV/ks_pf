@@ -1,0 +1,49 @@
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-row class="H1"> Front End </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-row class="H2" >
+            <ul>
+              <li *ngFor="let item of frontEnd">
+                {{ item }}
+              </li>
+            </ul>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col
+      ><ion-row class="H1"> Back End </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-row class="H2" >
+            <ul>
+              <li *ngFor="let item of backEnd">
+                {{ item }}
+              </li>
+            </ul>
+          </ion-row>
+        </ion-col>
+      </ion-row></ion-col
+    >
+    <ion-col>
+      <ion-row class="H1"> Misclenious </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-row class="H2" >
+            <ul>
+              <li *ngFor="let item of misc">
+                {{ item }}
+              </li>
+            </ul>
+
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+
+</ion-grid>

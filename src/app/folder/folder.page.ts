@@ -7,12 +7,22 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./folder.page.scss'],
 })
 export class FolderPage implements OnInit {
-  public folder!: string;
+  public route!: string;
+  public nameMap: any;
+  public componentName:string | undefined;
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute) {
+    this.nameMap = {
+      work:'Work',
+      skills:'Skills',
+      pInfo:'Personal Info',
+      edu:"Education"
+    }
+   }
 
   ngOnInit() {
-    this.folder = this.activatedRoute.snapshot.paramMap.get('id') as string;
+    this.route = this.activatedRoute.snapshot.paramMap.get('id') as string;
+    this.componentName = this.nameMap[this.route];
   }
 
 }
