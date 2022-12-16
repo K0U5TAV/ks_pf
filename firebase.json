@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "predeploy": "npm install -g @ionic/cli && npm i && ionic serve",
-    "public": "public",
+    "predeploy": "npm install -g @ionic/cli && npm i && npm run build",
+    "public": "www",
     "ignore": [
       "firebase.json",
       "**/.*",
